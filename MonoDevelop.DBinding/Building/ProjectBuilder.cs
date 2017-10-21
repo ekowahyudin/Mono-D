@@ -616,7 +616,7 @@ namespace MonoDevelop.D.Building
 			if(ProfilerModeHandler.IsProfilerMode && compiler.HasProfilerSupport)
 				sb.Append (p.ProfileFlag).Append(' ');
 
-			if (cfg.CustomDebugIdentifiers != null && cfg.CustomVersionIdentifiers.Length != 0)
+			if (cfg.CustomDebugIdentifiers != null && cfg.CustomDebugIdentifiers.Length != 0)
 				foreach (var id in cfg.CustomDebugIdentifiers)
 					sb.Append (p.DebugDefinition + "=" + id + " ");
 
